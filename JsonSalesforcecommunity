@@ -1,0 +1,38 @@
+componentAttributes is the design attribute values of the component and is a required parameter
+
+I recommend checking your retrieved json to see if this property exists. Here is a sample json from the documentation showing the attribute
+
+{
+    "themeLayoutType" : "Inner",
+    "viewType" : "account-management",
+    "appPageId" : "df9907cb-6e68-4ca1-8bb2-51173ca5374e",
+    "componentName" : "siteforce:sldsOneColLayout",
+    "label" : "Account Management",
+    "id" : "9ca8fa47-8e87-4915-a6f7-c2d8d37f3076",
+    "type" : "view",
+    "regions" : [ {
+         "regionName" : "content",
+         "id" : "969ada98-7d72-4e45-8a10-7db51fae247c",
+         "type" : "region",
+         "components" : [ {
+            "componentName" : "forceCommunity:tabset",
+            "componentAttributes" : {
+                "tabsetConfig" : "{\"UUID\":\"4711850e-ffdc-4375-a45e-f716bcdbbb1c\",\"activeTab\":\"tab1\",\"useOverflowMenu\":false,\"tabs\":[{\"UUID\":\"bc8fb51f-4783-43d4-9376-60c07677a367\",\"tabName\":\"Members\",\"tabKey\":\"tab1\",\"locked\":false,\"allowGuestUser\":false,\"seedComponents\":[{\"fqn\":\"forceCommunity:relatedList\",\"attributes\":{\"parentRecordId\":\"{!CurrentUser.accountId}\",\"relatedListName\":\"Users\",\"customTitle\":\"Members\",\"showCustomTitle\":\"true\",\"showBreadCrumbs\":\"false\",\"showRowNumbers\":\"false\",\"showManualRefreshButton\":\"false\"}}]},{\"UUID\":\"f2793a99-b757-4be4-846f-dc98a13a8139\",\"tabName\":\"Branding\",\"tabKey\":\"tab2\",\"locked\":false,\"allowGuestUser\":false,\"seedComponents\":[{\"fqn\":\"forceCommunity:accountBrandRecord\",\"attributes\":{\"recordId\":\"{!CurrentUser.accountId}\"}}]}]}",
+                "regions" : ""
+            },
+            "renderPriority" : "NEUTRAL",
+            "renditionMap" : { },
+            "id" : "4711850e-ffdc-4375-a45e-f716bcdbbb1c",
+            "type" : "component",
+            "renditions" : [ {
+               "renditionValue" : {
+                  "LumenInstanceAttributes" : {
+                  "richTextValue" : "<p>new text</p>"
+                  }
+               },
+              "id" : "9d8878df-f520-4010-861c-57b930a3daab",
+              "type" : "renditionComponent"
+            } ]
+        } ]
+    } ]
+}
